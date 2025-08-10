@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hike Signup</title>
+    <style>
+    .image-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .image-row img {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <h1>Sign Up for a Hike</h1>
+    <p>Fill in the form below to join our next hike.</p>
+
+    <form action="/submit-hike" method="post">
+    <label for="name">Full Name *</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+    <label for="email">Email *</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+    <label for="phone">Phone *</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="e.g. +27 82 123 4567" required><br><br>
+
+    <label for="hike">Choose a hike *</label><br>
+    <select id="hike" name="hike" required>
+        <option value="">--Select--</option>
+        <option value="ridge">Ridge Sunrise</option>
+        <option value="river">River Loop</option>
+        <option value="summit">Summit Peak</option>
+    </select><br><br>
+
+    <label for="date">Preferred Date *</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="emergency">Emergency Contact Name *</label><br>
+    <input type="text" id="emergency" name="emergency" required><br><br>
+
+    <label for="emergencyPhone">Emergency Contact Phone *</label><br>
+    <input type="tel" id="emergencyPhone" name="emergencyPhone" required><br><br>
+
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the terms and conditions *</label><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+
+    <h2>Upcoming Hikes</h2>
+    <table border="1">
+    <tr>
+        <th>Hike</th>
+        <th>Distance</th>
+        <th>Difficulty</th>
+    </tr>
+    <tr>
+        <td>Ridge Sunrise</td>
+        <td>5 km</td>
+        <td>Easy</td>
+    </tr>
+    <tr>
+        <td>River Loop</td>
+        <td>8 km</td>
+        <td>Moderate</td>
+    </tr>
+    <tr>
+        <td>Summit Peak</td>
+        <td>14 km</td>
+        <td>Strenuous</td>
+    </tr>
+    </table>
+
+
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60" alt="Hikers at sunrise" width="300" height="250">
+    <img src="images/pexels-ninauhlikova-287240.jpg" alt="Hike Trail" width="300" height="250">
+
+
+</body>
+</html>
